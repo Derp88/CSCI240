@@ -1,0 +1,46 @@
+Goal: Create a horse race using objects
+Input: A seed
+Output: A horse race.
+Steps:
+    - Create an object for the race and horse
+    - Have an array of horses (objects) in the race
+    - Run function to start race
+    - Advance horses
+    - Print the race
+    - Run function to check if race is over
+    - Repeat back to advance horses if race is not over
+
+start()
+Goal: Start the race and run the commands to operate the racec
+Input: None
+Output: Prints the race (Through calling printLane())
+Steps: 
+    - Advances horses
+    - Print the race
+    - Check for a winner
+
+printLane()
+Goal: Print the lane of a selected horses
+Input: A horses number
+Output: The horses lane ex: ..........3....
+Steps: 
+    - Print an amount of dots that is the same as the horses position
+    - If the horse has not won yet:
+        - Print the horse's number
+        - Print the number of dots that should follow after the horse
+
+checkWinner()
+Goal: Check and see if a horse has won
+Input: A horse number
+Output: If a horse has won stop the loop and print out the winner.
+Steps:
+    - If the horse's position is greater than the track length
+        - Stop 
+        - Print winner
+
+advance()
+Goal: Move the horse forward based off of random chance
+Input: None
+Output: The horses new position
+Steps:
+    - Take the current horse position and add a 50% chance for it move forward one

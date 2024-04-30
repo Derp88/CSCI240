@@ -1,0 +1,24 @@
+Goals: Make a student record system that loads and stores data
+Input: The students.dat file
+Output: A report for every student. Another report that only has the student names.
+Steps:
+    READ
+    - For every line read the data from it (Function)
+    - Split the line up and into different parts (stringstream)
+    - Split the dates up
+    - Store the parts into an array
+    - Convert strings to ints if needed
+    - Update an object that is in the array of objects with the current data in our data array
+    WRITE
+    - For every object in the array 
+    - Gather the data into a string
+    - Write the data to two different reports
+
+Function: 
+Goals: Convert string to Int or Float
+Input: String
+Output: Float/Int
+Steps: 
+    - Put the value into a string stringstream
+    - Return Int or Float value
+

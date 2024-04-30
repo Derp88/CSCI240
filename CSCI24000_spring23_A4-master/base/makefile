@@ -1,0 +1,21 @@
+horseRace: race.o horse.o main.o
+	g++ -g race.o horse.o main.o -o horseRace
+
+main.o: race.h main.cpp 
+	g++ -c -g main.cpp
+
+race.o: race.h race.cpp horse.h
+	g++ -c -g race.cpp
+
+horse.o: horse.h horse.cpp
+	g++ -c -g horse.cpp
+
+clean: 
+	rm *.o
+	rm horseRace
+
+run: horseRace
+	./horseRace
+
+debug: horseRace
+	gdb horseRace

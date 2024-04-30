@@ -1,0 +1,13 @@
+Goal: Simulate a pet game
+Input: User input for choices, and file input for loading a pet
+Output: The pet status, interactions, and a menu
+Steps:
+    - Have a main menu 
+        - Create a pet
+            - Has a sub menu where the user can select what pet they want.
+            (This will overwrite an exisiting pets)
+        - Interact with pet
+            - This has a sub menu with all the different interactions
+        - Save pet
+        - Load pet
+        - Quit

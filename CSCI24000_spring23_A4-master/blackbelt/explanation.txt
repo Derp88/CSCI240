@@ -1,0 +1,5 @@
+This is a rework of the original project where the user can put bets on a horse to win.
+There is now a new money object that manages the bets and money.
+
+NOTE: I removed the system of inputing a seed and instead use RNG now. 
+This makes more sense for a luck/random chance based game.

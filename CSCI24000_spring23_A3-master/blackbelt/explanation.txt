@@ -1,0 +1,1 @@
+Followed what the assignment said to do for blackbelt. The array is now created inside of main, and passed as a paramter into all functions.

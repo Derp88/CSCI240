@@ -1,0 +1,59 @@
+This is an optional text version of the UML if the grader perfers that.
+Just copy and past the following into https://mermaid.live/
+
+classDiagram
+AbsAccount <|-- Savings
+AbsAccount <|-- Checking
+
+class ATM{
+    - admin
+    + mainMenu():void
+    + saveAdmin(Admin): void
+    + loadAdmin(): Admin
+    + printLogIn(scanner): omt
+    + pinInput(Scanner): int
+    + printUserOptions(Scanner, Admin, User): void
+    + printAdminOptions(Scanner, Admin): void
+    + exit(Admin): void
+}
+class Admin{
+    -array User
+    + addUser(): void
+    + deleteUser(accnNum): void
+    + listUsers(): void
+    + applyInterest(double rate, double time): void
+    + findMatchingUser(int accountNumber): int
+}
+class User{
+    -int accountNumber
+    -int PIN
+    -Checking checkingAccount
+    -Savings savingsAccount
+    + User()
+    + setChecking(Checking): void
+    + setSavings(Savings): void
+    + getChecking(): Checking
+    + getSavings(): Savings
+    + checkAccNum(int accountNumber): bool
+    + checkPIN(int pin): bool
+    + setPIN(int pin): void
+    + set AccNum(int AccNum): void
+}
+class Savings{
+    +updateInterest(double rate, double time): void
+}
+
+class Checking
+class AbsAccount{
+    - float balance
+    + Account(): void
+    + Deposit(float): void
+    + Withdraw(float): bool
+    (True if valid amount)
+    + getBalance(): float
+    + setBalance(float): void;
+}
+
+%% ATM has an instance of Admin
+%% Admin has multiple instances of user
+%% User has an instance of savings and checking

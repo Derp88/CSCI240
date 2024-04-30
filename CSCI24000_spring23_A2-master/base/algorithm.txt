@@ -1,0 +1,15 @@
+Goals: Sort an array of numbers using a bubble sort algorithim
+Inputs: An array of numbers (unsorted)
+Output: An array of numbers that has been sorted.
+Steps:
+	- Print the initial array of values
+	- Sort the values
+		- For every value in the array minus 1 (outer loop)
+			-  For evey value in the array minus 1 (inner loop)
+			-  If the first item in the array is bigger than the next item in the array
+				- Swap the items so the bigger one is in the second spot.
+					- We will use pointers here and store copys of the values in a function, so we can swap.
+			- NOTE (Basically the inner loop does the sorting)
+			The outer loop keeps it running until it is actually sorted
+	- Print the new sorted values
+

@@ -1,0 +1,11 @@
+Goal: Get the sum of ints in a file, then print out a string that many times.
+Input: An input.txt file with ints and strings
+Output: An output.txt file that outputs the strings based on their ints
+Steps:
+    Do this for every line in the file:
+        If it is the first line get the values of all the ints then add them together
+        If it is the second line get the string 
+        Write the string to the output file as many integers it has
+
+
+

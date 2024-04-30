@@ -1,0 +1,29 @@
+Goal: A Bank ATM System
+Input: PIN & Account Number
+	- User:
+		- Deposit into savings & checking
+		- Withdraw from savings & checking
+	- Admin:
+		- Add User
+		- Delete User
+		- Apply interest
+Output:
+	- User:
+		- Get savings & checking balance
+	- Admin:
+		- List User
+Steps:
+	- Load data
+	- Check what account has a matching number. Check if PIN is valid.
+	- Give menu to user of various options
+	- Once done, store data 
+
+Savings.java, applyInterestRate()
+Goal: Update the balance of the savings account with the calculated interest
+Input: Interest Rate, Time
+Output: Updated balance
+Steps: 
+	- Time the interest rate by time
+	- Add 1 to this value
+	- Multiply this by the current balance
+	- Save this as the new balance

@@ -1,0 +1,71 @@
+classDiagram
+
+Attributebstract <|-- Hunger
+Attributebstract <|-- Strength
+Attributebstract <|-- Thirst
+
+PetAbstract <|-- dog
+PetAbstract <|-- cat
+PetAbstract <|-- lizard
+
+class PetAbstract{
+    - String Name
+    - Hunger
+    - Strength
+    - Thirst
+    + SetHunger(Hunger): void
+    + GetHunger(): Hunger
+    + SetStrength(Strength): void
+    + GetStrength(): Strength
+    + SetThirst(Thirst): void
+    + GetThirst(): Thirst
+    + sleep(): void
+    + assignName(String): void
+    + getName(): String
+    + giveWater(): void
+    + printStatus(): void
+    + Abstract feedPet(): void
+    + Abstract playPet(): void
+    + Abstract makeSound(): void
+
+}
+class dog{
+    + makeSound(): void
+    + playPet(int): void
+    + feedPet(int): void
+    + giveBath(): void
+}
+class cat{
+    + makeSound(): void
+    + playPet(): void
+    + feedPet(): void
+}
+class lizard{
+    + makeSound(): void
+    + playPet(): void
+    + feedPet(): void
+    + shedSkin(): void
+}
+class Attributebstract{
+    - int attributeVal
+    + Attribute()
+    + Attribute(int initVal)
+    + SetAttribute(int): void
+    + GetAttribute(): int
+    + increaseAttribute(int): bool
+    + decreaseAttribute(int): bool
+    + Abstract getAttribStr(): string 
+}
+class Hunger{
+    + getAttribStr(): string
+}
+class Strength{
+    + getAttribStr(): string
+}
+class Thirst{
+    + getAttribStr(): string
+}
+
+
+%% An instance of pet, has instances of hunger, strength, thirst
+%% Is line 29 supposed to be abstract? Abstract getStringAttribute(): string 
