@@ -1,0 +1,23 @@
+Git is pretty cool, I like git!
+
+I've been practing since our lesson in class and I decided to start learning git at the start of last semester.
+
+What I have been working on:
+	- Figured out how to clone a repo to new/different computers. I keep code on my dorm PC, home PC, and Chromebook (git clone url)
+	- Having code on multiple computers has lead to my learning about merge conflicts.
+	- The solution that works best for me is to avoid them in the first place by doing git pull before I start working. (git pull)
+	- If I forget to, I can do a git reset --hard to reset the environment. (git reset --hard)
+	- Practiced looking at old commits with checkout (git checkout)
+	- I have also practiced undoing commits.
+
+What I did last semester with Git & Github:
+	- I used Git to keep all my projects for the course in one repo, so I could work on them easily on multiple computers.
+	- I also used Git & Github with PythonAnywhere. That way I code write code in my perfered IDE (VS Code), push it to Github,
+	then pull the code to PythonAnywhere. This was great for me, because I don't like PythonAnywhere's IDE.
+	
+My first experiences with Github:
+	- My high school robotics team started using Github my Junior year. We just used the desktop app and not the Git Command Line Interface,
+	but I still feel it was a very good learning expereience for me. Espically since the team had another programmer, so we had to coordinate 
+	our work together.
+	- This also gave me experience working with different branches, as there is a lot of test code in robotics.
+	- Also to back all this up, here is my work experience from last year in Robotics. https://github.com/panthertech292/2022_r
